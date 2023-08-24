@@ -1,0 +1,106 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: calc(570 / 1770 * 100%);
+}
+
+.form__title {
+  margin-bottom: 23px;
+  color: var(--color-grey-light);
+}
+
+.form__input {
+  margin-bottom: 25px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 16px;
+  line-height: var(--default-line-height);
+  color: var(--color-grey-light);
+  outline: none;
+  background-color: var(--color-black-light);
+  transition: background-color var(--transition-timing) ease-in-out;
+}
+
+.form__textarea {
+  min-height: 150px;
+  margin-bottom: 32px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 16px;
+  line-height: var(--default-line-height);
+  color: var(--color-grey-light);
+  outline: none;
+  background-color: var(--color-black-light);
+  resize: none;
+  transition: background-color var(--transition-timing) ease-in-out;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: var(--color-grey-light);
+}
+
+.form__input:focus-visible,
+.form__textarea:focus-visible {
+  background-color: var(--color-grey);
+}
+
+.form__input:focus-visible,
+.form__textarea:focus-visible {
+  color: var(--color-white);
+}
+
+.form__btn-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -10px;
+}
+
+.form__btn {
+  padding: 19px 52px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.form__check {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.form__check:focus-within {
+  color: var(--color-white);
+}
+
+.form__checkbox:checked~.form__visual-check::before {
+  opacity: 1;
+}
+
+.form__visual-check {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid;
+  border-radius: 2px;
+  transition: border-color var(--transition-timing);
+}
+
+.form__visual-check::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 7px;
+  height: 4px;
+  border-bottom: 2px solid var(--color-green-light);
+  border-left: 2px solid var(--color-green-light);
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+.form__visual-check,
+.form__check-descr {
+  vertical-align: middle;
+}

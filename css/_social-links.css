@@ -1,0 +1,27 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.social-links__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.social-links__link {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  color: var(--color-grey);
+  outline: none;
+  transition: color var(--transition-timing) ease-in-out;
+}
+
+.social-links__link:focus-visible:not(:hover) {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 5px;
+}
+
+.social-links__link:active {
+  color: var(--color-orange-dark);
+}

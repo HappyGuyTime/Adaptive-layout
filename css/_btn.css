@@ -1,0 +1,73 @@
+.btn {
+  display: inline-block;
+  max-width: 280px;
+  padding: 20px 38px;
+  border-radius: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: var(--font-bold);
+  line-height: 20px;
+  color: var(--color-white);
+  outline: none;
+  background-color: var(--color-orange);
+  transition: background-color var(--transition-timing) ease-in-out;
+}
+
+.btn:focus-visible {
+  background-color: var(--color-orange-light);
+}
+
+.btn:active {
+  background-color: var(--color-orange-dark);
+}
+
+.btn--big {
+  max-width: 40%;
+  padding: 25px 39px;
+  font-size: 23px;
+  line-height: 28px;
+}
+
+.btn--transparent {
+  display: inline-block;
+  border: 1px solid var(--color-black);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  background-color: transparent;
+}
+
+.btn--transparent:focus-visible {
+  border: var(--color-grey);
+  color: var(--color-white);
+  background-color: var(--color-grey);
+}
+
+.btn--transparent:active {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.btn--transparent-orange {
+  position: relative;
+  border-radius: 16px;
+  background-color: transparent;
+}
+
+.btn--transparent-orange:active {
+  color: var(--color-white);
+}
+
+.btn--transparent-orange::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 3px solid var(--color-orange-light);
+  border-radius: inherit;
+}
+
+.btn--transparent-orange:active::after {
+  border: none;
+}

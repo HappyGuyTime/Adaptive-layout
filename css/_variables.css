@@ -1,0 +1,22 @@
+:root {
+  --section-padding: 25px;
+  --container-max-width: 1870px;
+  --container-padding: 50px;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --default-font-size: 16px;
+  --default-line-height: 32px;
+  --color-black: #000000;
+  --color-black-light: #414141;
+  --color-grey: #666666;
+  --color-grey-light: #cacaca;
+  --color-white: #ffffff;
+  --color-orange: #ff9900;
+  --color-orange-dark: #e1670e;
+  --color-orange-light: #ffb84d;
+  --color-green-light: #97ee3f;
+  --transition-timing: .3s;
+}
